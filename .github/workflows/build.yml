@@ -8,7 +8,7 @@ jobs:
     - uses: geode-sdk/build-geode-mod@v1
       with:
         platforms: android64
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: Antimatter
         path: build-android64/*.geode
