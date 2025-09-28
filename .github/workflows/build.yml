@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: geode-sdk/build-geode-mod@v1
       with:
         platforms: android64
@@ -12,3 +12,4 @@ jobs:
       with:
         name: Antimatter
         path: build-android64/*.geode
+        retention-days: 7
