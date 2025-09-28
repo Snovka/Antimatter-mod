@@ -1,0 +1,14 @@
+name: Build Antimatter Mod
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: geode-sdk/build-geode-mod@v1
+      with:
+        platforms: android64
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Antimatter
+        path: build-android64/*.geode
