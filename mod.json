@@ -1,0 +1,14 @@
+{
+    "geode": "4.8.0",
+    "version": "v1.0.0",
+    "id": "Snovka999.antimatter",
+    "name": "Antimatter",
+    "developer": "Snovka999",
+    "description": "MegaHack-like cheats with a black hole vibe for Android.",
+    "icon": "BlackHole.png",
+    "settings": {
+        "noclip": {"name": "Noclip", "type": "bool", "default": false},
+        "speedhack": {"name": "Speed", "type": "float", "default": 1.0, "min": 0.1, "max": 5.0},
+        "infinite-jump": {"name": "Infinite Jump", "type": "bool", "default": false}
+    }
+}
